@@ -1,0 +1,7 @@
+.env
+node_modules
+dist
+sessions
+workspace
+__pycache__
+

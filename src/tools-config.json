@@ -1,0 +1,92 @@
+[
+  {
+    "name": "web_search",
+    "file": "web-search.ts",
+    "description": "Search the web for any information (news, general knowledge, facts). Requires TAVILY_API_KEY."
+  },
+  {
+    "name": "crypto_price",
+    "file": "crypto-price.ts",
+    "description": "Get real-time cryptocurrency prices (bitcoin, ethereum, solana, etc.)"
+  },
+  {
+    "name": "weather",
+    "file": "weather.ts",
+    "description": "Get current weather for any location."
+  },
+  {
+    "name": "get_current_date_time",
+    "file": "current-date-time.ts",
+    "description": "Get the current date and time."
+  },
+  {
+    "name": "tv_control",
+    "file": "tv-control.ts",
+    "description": "Control the Panasonic TV. Commands: channel_up, channel_down, volume_up, volume_down, mute, power, ok, back, home, menu, guide, input, or 'channel' to tune to a specific channel. Known channels: 99=VIUTV (VIU TV, VIU), 77=HOYTV (HOY TV, HOY), 81=TVB, 83=TVB新聞 (TVB News)."
+  },
+  {
+    "name": "remember",
+    "file": "memory.ts",
+    "description": "Save important information to long-term memory. Store in English."
+  },
+  {
+    "name": "recall",
+    "file": "memory.ts",
+    "description": "Search long-term memory for relevant information. Search in English."
+  },
+  {
+    "name": "tool_writer_agent",
+    "file": null,
+    "description": "A developer pipeline that creates, tests, and deploys new tool files. Delegate when the user wants to add a new capability."
+  },
+  {
+    "name": "get_exchange_rate",
+    "file": "currency_exchange.ts",
+    "description": "Get the current exchange rate between two currencies (e.g., USD to HKD)."
+  },
+  {
+    "name": "forget",
+    "file": "memory.ts",
+    "description": "Delete a memory from long-term memory. Always confirm with the user before deleting."
+  },
+  {
+    "name": "set_identity",
+    "file": "identity.ts",
+    "description": "Set your own identity (e.g. name). Use when user gives you a name or tells you about yourself."
+  },
+  {
+    "name": "get_identity",
+    "file": "identity.ts",
+    "description": "Get your own identity info (e.g. your name). Use when someone asks who you are."
+  },
+  {
+    "name": "save_person",
+    "file": "people.ts",
+    "description": "Save a person with relationship (graph) and profile/preferences (semantic search)."
+  },
+  {
+    "name": "find_person",
+    "file": "people.ts",
+    "description": "Find a person by name or relationship in the graph."
+  },
+  {
+    "name": "search_people",
+    "file": "people.ts",
+    "description": "Semantic search on people profiles (e.g. \"who likes hiking?\", \"someone in tech\")."
+  },
+  {
+    "name": "list_people",
+    "file": "people.ts",
+    "description": "List all people and relationships."
+  },
+  {
+    "name": "update_person",
+    "file": "people.ts",
+    "description": "Update a person's notes/profile or relationship."
+  },
+  {
+    "name": "remove_person",
+    "file": "people.ts",
+    "description": "Remove a person. Confirm with user first."
+  }
+]

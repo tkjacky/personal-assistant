@@ -1,0 +1,34 @@
+services:
+  chromadb:
+    image: chromadb/chroma
+    container_name: chromadb
+    ports:
+      - "8100:8000"
+    volumes:
+      - chromadb_data:/data
+    restart: unless-stopped
+
+  chromadb-admin:
+    image: fengzhichao/chromadb-admin
+    container_name: chromadb-admin
+    ports:
+      - "8101:3001"
+    depends_on:
+      - chromadb
+    restart: unless-stopped
+
+  neo4j:
+    image: neo4j:community
+    container_name: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+    environment:
+      - NEO4J_AUTH=none
+    restart: unless-stopped
+
+volumes:
+  chromadb_data:
+  neo4j_data:
